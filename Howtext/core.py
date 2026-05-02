@@ -1,12 +1,11 @@
 import sys
 import time
 import math
-import unicodedata
 
 class HowText:
     def __init__(self):
         # Mapping colorful emojis to color-changeable Unicode symbols
-                self.conversion_table = {
+        self.conversion_table = {
             # ── Hearts ──
             "❤️": "♥",   "❤": "♥",    "🧡": "♥",   "💛": "♥",
             "💚": "♥",   "💙": "♥",    "💜": "♥",   "🖤": "♥",
@@ -80,7 +79,7 @@ class HowText:
             # ── Food & Drink ──
             "🍕": "▽",  "🍔": "≡",   "☕": "c[_]",  "🍺": "⊔",
             "🍷": "⊻",  "🎂": "♨",
-        }
+        } # <--- 이 중괄호의 위치를 self와 맞게 정렬했어요!
         self._running = False
 
     def convert_emojis(self, text):
@@ -121,4 +120,4 @@ class HowText:
 # Developer Test
 if __name__ == "__main__":
     ht = HowText()
-    ht.rainbow_print("Testing!", speed=0.03)
+    ht.rainbow_print("Testing! ❤️ 🚀", speed=0.03)
