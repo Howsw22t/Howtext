@@ -102,7 +102,7 @@ class HowText:
         step = 0
         self._running = True
         
-        print(f"[HowText] Starting animation... Press Ctrl+C to stop.")
+        print(f"[HowText] Starting animation... Press Ctrl+C to stop..")
         
         try:
             while self._running:
