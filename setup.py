@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="HowText",
-    version="0.1.1",
+    version="0.1.2",
     author="Howsweet_0803", 
     description="Real-time rainbow text engine with emoji-to-unicode conversion",
     packages=find_packages(),
