@@ -81,7 +81,7 @@ class HowText:
             "🍕": "▽",  "🍔": "≡",   "☕": "c[_]",  "🍺": "⊔",
             "🍷": "⊻",  "🎂": "♨",
         }
-    self._running = False
+        self._running = False
 
     def convert_emojis(self, text):
         """Converts fixed-color emojis to colorable unicode symbols."""
@@ -102,7 +102,7 @@ class HowText:
         step = 0
         self._running = True
         
-        print(f"[HowText] Starting animation... Press Ctrl+C to stop.")
+        print(f"[HowText] Starting animation... Press Ctrl+C to stop..")
         
         try:
             while self._running:
