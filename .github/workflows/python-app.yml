@@ -6,7 +6,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-# 1. 권한 설정 추가 (매우 중요!)
 permissions:
   contents: read
   id-token: write
@@ -24,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel  # 빌드에 필요한 도구 설치
+        pip install setuptools wheel
     - name: Build and publish
       run: |
         python setup.py sdist bdist_wheel
