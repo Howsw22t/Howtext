@@ -81,7 +81,7 @@ class HowText:
             "🍕": "▽",  "🍔": "≡",   "☕": "c[_]",  "🍺": "⊔",
             "🍷": "⊻",  "🎂": "♨",
         }
-    self._running = False
+        self._running = False
 
     def convert_emojis(self, text):
         """Converts fixed-color emojis to colorable unicode symbols."""
